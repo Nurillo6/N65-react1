@@ -42,7 +42,7 @@ export const ListItem = () => {
 
     return (
         <ul className='flex justify-between w-[1200px] mx-auto mt-10'>
-         
+            Salom
             {categories.map((item, index) => <Item key={item.id} bg={item.bg} count={item.count} title={item.title} Images={item.img}/>)}
         </ul>
     )
