@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button/Button';
+import {ListItem} from './components/ListItem/ListItem';
+import AOS from "aos"
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ListItem/>
+        {/* <Button extraStyle={"border-blue-500 flex items-center  justify-center gap-5 text-blue-500 m-10"}>
+          <img className='rounded-[50%]' src='https://picsum.photos/id/44/30/30'/>
+          Create User  
+        </Button>
+        <Button extraStyle={"border-blue-500 flex items-center  justify-center gap-5 text-blue-500 m-10"}>
+          Log in
+        </Button> */}
+    </>
   );
 }
 
